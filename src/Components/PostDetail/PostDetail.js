@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from '../Comments/Comments';
 
+
 const PostDetail = () => {
     const postStyle = {
         border: '1px solid red',
-        margin: '20px',
+        margin: '50px',
+        width: '1000px',
         padding: '20px',
         borderRadius: '20px'
     }

@@ -10,9 +10,14 @@ const Main = () => {
         .then(response => response.json())
         .then(data => setPosts(data))
     }, [])
+    const style={
+        marginLeft: '300px',
+        marginBottom: '50px',
+        marginTop: '50px'
+    }
     return (
         <div>
-               <h1>posts: {posts.length}</h1>
+               <h1 style={style}>posts: {posts.length}</h1>
             {
                 posts.map(post => <Title post={post}></Title>)
             }
